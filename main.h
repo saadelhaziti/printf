@@ -16,5 +16,9 @@ int print_binary(va_list arg);
 int switche(va_list list, char format);
 int print_min_int(void);
 int count_digits(int n);
+int print_u_integer(va_list arg);
+int print_octal(va_list arg);
+int print_hexadecimal(va_list arg);
+int print_hexadecimal_upper(va_list arg);
 
 #endif
