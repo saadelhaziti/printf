@@ -47,7 +47,7 @@ return (print_u(n));
 int print_octal(va_list arg)
 {
 	unsigned int n = va_arg(arg, unsigned int);
-	int len = 0, num_digits = 0, temp, divisor, digit, i;
+	unsigned int len = 0, num_digits = 0, temp, divisor, digit, i;
 
     if (n == 4294967295)
 	{
