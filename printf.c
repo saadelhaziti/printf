@@ -10,24 +10,22 @@
 
 int _printf(const char *format, ...)
 {
-	int count = 0, n = 0;
+	int count = 0;
 	va_list list;
 
 	va_start(list, format);
+	if (!format || (format[0] == '%' && !format[1])){
+        return (-1);
+}
+    if (format[0] == '%' && format[1] == ' ' && !format[2]){
+        return (-1);
+		}
 	while (format && *format)
 	{
 		if (*format == '%')
 		{
 			format++;
-			if ((*format == '\0' || ((*format == ' ') && (*(format + 1) == '\0'))) && n == 0)
-			{
-				return (-1);
-			}
-			else
-			{
-				n = 1;
 				count += switche(list, *format);
-			}
 		}
 		else
 		{

@@ -9,11 +9,17 @@
  */
 int main(void)
 {
-    int n=0;
+    int n = 0;
     n = _printf("%Hello world%");
-    _printf("\n%d\n",n);
+    printf("\n%d\n",n);
+    n = _printf("%Hello world");
+    printf("\n%d\n",n);
     n = _printf("Hello world%");
-    _printf("\n%d\n",n);
+    printf("\n%d\n",n);
+	n = _printf("%");
+    printf("\n%d\n",n);
+	n = _printf("% Hello world");
+    printf("\n%d\n",n);
 	
 	return (0);
 }
