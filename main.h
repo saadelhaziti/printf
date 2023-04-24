@@ -17,5 +17,6 @@ int switche(va_list list, char format);
 int print_min_int(void);
 int count_digits(int n);
 int print_u_integer(va_list arg);
+int print_octal(va_list arg);
 
 #endif

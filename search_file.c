@@ -35,6 +35,9 @@ int switche(va_list list, char format)
 		case 'u':
 			count += print_u_integer(list);
 			break;
+		case 'o':
+			count += print_octal(list);
+			break;
 		default:
 			_putchar('%');
 			_putchar(format);
