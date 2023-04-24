@@ -49,9 +49,9 @@ int print_octal(va_list arg)
 	unsigned int n = va_arg(arg, unsigned int);
 	unsigned int len = 0, num_digits = 0, temp, divisor, digit, i;
 
-    if (n == 4294967295)
+	if (n == 4294967295)
 	{
-		_printf("%s","37777777777");
+		_printf("%s", "37777777777");
 		return (11);
 	}
 	if (n == 0)

@@ -25,7 +25,7 @@ int switche(va_list list, char format)
 	}
 	if (funcs[i].str != '\0')
 	{
-		count +=funcs[i].print(list);
+		count += funcs[i].print(list);
 	}
 	else if (format == '%')
 	{
@@ -38,7 +38,6 @@ int switche(va_list list, char format)
 		_putchar(format);
 		count += 2;
 	}
-	
 
 	return (count);
 }
