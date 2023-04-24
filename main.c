@@ -12,6 +12,7 @@ int main(void)
     int len;
     int len2;
     unsigned int ui = 5656567;
+	int num1 = 2545;
 
     len = _printf("Let's try to printf a simple sentence.\n");
     len2 = printf("Let's try to printf a simple sentence.\n");
@@ -33,5 +34,11 @@ int main(void)
     len2 = printf("Percent:[%%]\n");
     _printf("Len:[%d]\n", len);
     printf("Len:[%d]\n", len2);
+	_printf("%b\n", num1);
+	printf("%b\n", num1);
+	_printf("%b\n", num1);
+        printf("%b\n", num1);
+
+	
 	return (0);
 }

@@ -15,7 +15,7 @@ int switche(va_list list, char format)
 	string funcs[] = {
 		{'c', print_chare}, {'i', print_integer}, {'d', print_integer},
 		{'s', print_string}, {'u', print_u_integer}, {'o', print_octal},
-		{'x', print_hex}, {'X', print_hex_upper}, {'\0', NULL}
+		{'x', print_hex}, {'X', print_hex_upper}, {'b', print_binary}, {'\0', NULL}
 	};
 
 	i = 0;
