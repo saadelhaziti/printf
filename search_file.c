@@ -11,44 +11,34 @@
 
 int switche(va_list list, char format)
 {
-	int count = 0;
+	int count = 0, i = 0;
+	string funcs[] = {
+		{'c', print_chare}, {'i', print_integer}, {'d', print_integer},
+		{'s', print_string}, {'u', print_u_integer}, {'o', print_octal},
+		{'x', print_hex}, {'X', print_hex_upper}, {'\0', NULL}
+	};
 
-	switch (format)
+	i = 0;
+	while ((format != funcs[i].str) && (funcs[i].str != '\0'))
 	{
-		case 'c':
-			count += print_chare(list);
-			break;
-		case 's':
-			count += print_string(list);
-			break;
-		case 'd':
-		case 'i':
-			count += print_integer(list);
-			break;
-		case '%':
-			_putchar('%');
-			count++;
-			break;
-		case 'b':
-			count += print_binary(list);
-			break;
-		case 'u':
-			count += print_u_integer(list);
-			break;
-		case 'o':
-			count += print_octal(list);
-			break;
-		case 'x':
-			count += print_hex(list);
-			break;
-		case 'X':
-			count += print_hex_upper(list);
-			break;
-		default:
-			_putchar('%');
-			_putchar(format);
-			count += 2;
+		i++;
 	}
+	if (funcs[i].str != '\0')
+	{
+		count +=funcs[i].print(list);
+	}
+	else if (format == '%')
+	{
+		_putchar('%');
+		count++;
+	}
+	else
+	{
+		_putchar('%');
+		_putchar(format);
+		count += 2;
+	}
+	
 
 	return (count);
 }
