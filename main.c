@@ -9,17 +9,12 @@
  */
 int main(void)
 {
-	unsigned int y=2424, n=0,m=0;
-	unsigned int ui;
-
-	m = _printf("print uns int %o\n", y);
-	_printf("len of the output : %d\n", m);
-	m = _printf("print uns int %o\n", n);
-	_printf("len of the output : %d\n", m);
-	m = _printf("print uns int %o\n", 4294967295);
-	_printf("len of the output : %d\n", m);
-	ui = (unsigned int)INT_MAX + 1024;
-	_printf("Unsigned octal:[%o]\n", ui);
-	printf("Unsigned octal:[%o]\n", ui);
+    int y=17, n=0,m=0;
+	m=_printf("print uns int %X\n", y);
+	_printf("len of the output : %d\n",m);
+	m=_printf("print uns int %X\n", n);
+	_printf("len of the output : %d\n",m);
+	m=_printf("print uns int %X\n", 243555);
+	_printf("len of the output : %d\n",m);
 	return (0);
 }

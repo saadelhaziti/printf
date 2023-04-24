@@ -38,6 +38,12 @@ int switche(va_list list, char format)
 		case 'o':
 			count += print_octal(list);
 			break;
+		case 'x':
+			count += print_hex(list);
+			break;
+		case 'X':
+			count += print_hex_upper(list);
+			break;
 		default:
 			_putchar('%');
 			_putchar(format);

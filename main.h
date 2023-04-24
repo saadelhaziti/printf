@@ -18,5 +18,7 @@ int print_min_int(void);
 int count_digits(int n);
 int print_u_integer(va_list arg);
 int print_octal(va_list arg);
+int print_hex(va_list arg);
+int print_hex_upper(va_list arg);
 
 #endif
