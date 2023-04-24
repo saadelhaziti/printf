@@ -9,7 +9,7 @@
  */
 int main(void)
 {
-    unsigned int y=4294967292, m=0;
+    unsigned int y=0, m=0;
 	m=_printf("print uns int %u\n", y);
 	_printf("len of the output : %d\n",m);
 	m=_printf("print uns int %o\n", y);
