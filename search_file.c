@@ -32,6 +32,9 @@ int switche(va_list list, char format)
 		case 'b':
 			count += print_binary(list);
 			break;
+		case 'u':
+			count += print_u_integer(list);
+			break;
 		default:
 			_putchar('%');
 			_putchar(format);
