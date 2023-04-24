@@ -13,6 +13,8 @@ int main(void)
     int len2;
     unsigned int ui = 5656567;
 	int num1 = 2545;
+	char *str = NULL;
+	int n = 0;
 
     len = _printf("Let's try to printf a simple sentence.\n");
     len2 = printf("Let's try to printf a simple sentence.\n");
@@ -34,10 +36,19 @@ int main(void)
     len2 = printf("Percent:[%%]\n");
     _printf("Len:[%d]\n", len);
     printf("Len:[%d]\n", len2);
-	_printf("%b\n", num1);
-	printf("%b\n", num1);
-	_printf("%b\n", num1);
-        printf("%b\n", num1);
+    _printf("%b\n", num1);
+    printf("%b\n", num1);
+    _printf("%b\n", num1);
+    printf("%b\n", num1);
+    _printf("%s\n", str);
+    n=_printf("");
+    _printf("\n%d\n",n);
+    n=_printf("%");
+    _printf("\n%d\n",n);
+    n=_printf("fgdgfgfh% ");
+    _printf("\n%d\n",n);
+    n=_printf("% ");
+    _printf("\n%d\n",n);
 
 	
 	return (0);
