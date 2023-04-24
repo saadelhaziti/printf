@@ -10,6 +10,7 @@
 int main(void)
 {
     int n = 0;
+    char str[]="Best~School";
     n = _printf("%Hello world%");
     printf("\n%d\n",n);
     n = _printf("%Hello world");
@@ -20,6 +21,9 @@ int main(void)
     printf("\n%d\n",n);
 	n = _printf("% Hello world");
     printf("\n%d\n",n);
-	
+    
+	n=_printf("%S\n", str);
+    printf("\n%d\n",n);
+
 	return (0);
 }
