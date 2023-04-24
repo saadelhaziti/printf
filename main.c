@@ -9,45 +9,11 @@
  */
 int main(void)
 {
-    int len;
-    int len2;
-    unsigned int ui = 5656567;
-	int num1 = 2545;
-	char *str = NULL;
-	int n = 0;
-
-    len = _printf("Let's try to printf a simple sentence.\n");
-    len2 = printf("Let's try to printf a simple sentence.\n");
-    _printf("Length:[%d, %i]\n", len, len);
-    printf("Length:[%d, %i]\n", len2, len2);
-    _printf("Negative:[%d]\n", -762534);
-    printf("Negative:[%d]\n", -762534);
-    _printf("Unsigned:[%u]\n", ui);
-    printf("Unsigned:[%u]\n", ui);
-    _printf("Unsigned octal:[%o]\n", ui);
-    printf("Unsigned octal:[%o]\n", ui);
-    _printf("Unsigned hexadecimal:[%x, %X]\n", ui, ui);
-    printf("Unsigned hexadecimal:[%x, %X]\n", ui, ui);
-    _printf("Character:[%c]\n", 'H');
-    printf("Character:[%c]\n", 'H');
-    _printf("String:[%s]\n", "I am a string !");
-    printf("String:[%s]\n", "I am a string !");
-    len = _printf("Percent:[%%]\n");
-    len2 = printf("Percent:[%%]\n");
-    _printf("Len:[%d]\n", len);
-    printf("Len:[%d]\n", len2);
-    _printf("%b\n", num1);
-    _printf("%b\n", num1);
-    _printf("%s\n", str);
-    n=_printf("");
+    int n=0;
+    n = _printf("%Hello world%");
     _printf("\n%d\n",n);
-    n=_printf("%");
+    n = _printf("Hello world%");
     _printf("\n%d\n",n);
-    n=_printf("fgdgfgfh% ");
-    _printf("\n%d\n",n);
-    n=_printf("% ");
-    _printf("\n%d\n",n);
-
 	
 	return (0);
 }

@@ -10,7 +10,7 @@
 
 int _printf(const char *format, ...)
 {
-	int count = 0;
+	int count = 0, n = 0;
 	va_list list;
 
 	va_start(list, format);
@@ -19,12 +19,13 @@ int _printf(const char *format, ...)
 		if (*format == '%')
 		{
 			format++;
-			if (*format == '\0' || ((*format == ' ') && (*(format + 1) == '\0')))
+			if ((*format == '\0' || ((*format == ' ') && (*(format + 1) == '\0'))) && n == 0)
 			{
 				return (-1);
 			}
 			else
 			{
+				n = 1;
 				count += switche(list, *format);
 			}
 		}
