@@ -6,6 +6,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include <limits.h>
+#include <stdint.h>
 
 typedef struct forma_cara
 {
@@ -28,5 +29,6 @@ int print_octal(va_list arg);
 int print_hex(va_list arg);
 int print_hex_upper(va_list arg);
 int print_str(va_list arg);
+int print_add(va_list arg);
 
 #endif

@@ -9,21 +9,14 @@
  */
 int main(void)
 {
+    void *addr;
     int n = 0;
-    char str[]="Best~School";
-    n = _printf("%Hello world%");
-    printf("\n%d\n",n);
-    n = _printf("%Hello world");
-    printf("\n%d\n",n);
-    n = _printf("Hello world%");
-    printf("\n%d\n",n);
-	n = _printf("%");
-    printf("\n%d\n",n);
-	n = _printf("% Hello world");
-    printf("\n%d\n",n);
-    
-	n=_printf("%S\n", str);
-    printf("\n%d\n",n);
+
+    addr = (void *)0x7ffe637541f0;
+    n = _printf("Address:[%p]\n", addr);
+    printf("Address:[%p]\n", addr);
+
+    printf("%d",n);
 
 	return (0);
 }

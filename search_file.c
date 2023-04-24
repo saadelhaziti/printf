@@ -16,7 +16,7 @@ int switche(va_list list, char format)
 		{'c', print_chare}, {'i', print_integer}, {'d', print_integer},
 		{'s', print_string}, {'u', print_u_integer}, {'o', print_octal},
 		{'x', print_hex}, {'X', print_hex_upper}, {'b', print_binary},
-		{'S', print_str}, {'\0', NULL}
+		{'S', print_str}, {'p', print_add}, {'\0', NULL}
 	};
 
 	i = 0;

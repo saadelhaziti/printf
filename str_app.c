@@ -58,3 +58,63 @@ i++;
 }
 return (count);
 }
+
+/**
+ * print_address - printf address
+ * @ptr: void pointre
+ *
+ * Return: counter
+ */
+
+int print_address(void *ptr)
+{
+uintptr_t address = (uintptr_t) ptr;
+char hex_str[sizeof(uintptr_t) * 2 + 3];
+int index = 0, start = 2, end, digit, i = 0, count = 0;
+char temp;
+
+hex_str[index] = '0';
+index++;
+hex_str[index] = 'x';
+index++;
+while (address > 0)
+{
+digit = address & 0xf;
+hex_str[index] = (digit < 10) ? ('0' + digit) : ('a' + digit - 10);
+index++;
+address >>= 4;
+}
+hex_str[index] = '\0';
+end = index - 1;
+while (start < end)
+{
+temp = hex_str[start];
+hex_str[start] = hex_str[end];
+hex_str[end] = temp;
+start++;
+end--;
+}
+while (hex_str[i] != '\0')
+{
+_putchar(hex_str[i]);
+i++;
+count++;
+}
+return (count);
+}
+
+/**
+ * print_add - printf add in hex
+ * @arg: Argument
+ *
+ * Return: counter
+ */
+
+int print_add(va_list arg)
+{
+int n = 0;
+void *p = va_arg(arg, void*);
+
+n += print_address(p);
+return (n);
+}
