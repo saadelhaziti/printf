@@ -18,10 +18,9 @@ it first argument which contains text and format specifiers that are replaced by
 <li>if specifier is %i -> output integer</li>
 
 <h5>task 2</h5>
-<p>info generale abouy task 0:</p>
-<li>if specifier is %s -> output string</li>
-<li>if specifier is %c -> output character</li>
-<li>if specifier is %% -> output %</li>
+<p>general info about task 2:</p>
+<li>if specifier is %b -> output binary</li>
+
 <h5>task 3</h5>
 <p>info generale abouy task 0:</p>
 <li>if specifier is %s -> output string</li>
