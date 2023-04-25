@@ -1,19 +1,42 @@
-<h5>PARTNERS:</h5>
-<h6>SAAD EL-HAZITI WITH DZEK00</h6>
+<h1><center>0x11. C - printf</center></h1>
+<h4>PARTNERS:</h4>
+<h5>SAAD EL-HAZITI WITH DZEK00</h5>
 
-<p>In this project, We will create a printf function that can output formatted text to the console. Printf is a very powerful function that can format text in many ways. It is a core function of the C standard library, And almost every C program uses it at some point. Our goal is to create a custom version of this function</p>
-
-<p>To create our custom printf function, We need to plan out how it will work. We can create a flowchart to help us visualize the logic of the function. Here is an example of a simple flowchart for printf:</p>
-
-<li>start -> read format string -> while format string not empty -></li>
-<li>parse next format specifier -> output text before specifier -></li>
-<li>if specifier is %d -> output decimal number</li>
+<p>intro about project</p>
+<h5>task 0</h5>
+<p>info generale abouy task 0:</p>
 <li>if specifier is %s -> output string</li>
 <li>if specifier is %c -> output character</li>
 <li>if specifier is %% -> output %</li>
-<li>if specifier is unknown -> output error</li>
-<li>end loop -> output remaining text -> end</li>
 
-<p>
+<h5>task 1</h5>
+<p>info generale abouy task 0:</p>
+<li>if specifier is %d -> output string</li>
+<li>if specifier is %i -> output character</li>
 
-In this project, we will use our knowledge of C and the concepts of pair programming, flowcharts, and technical writing to create a custom printf function. We will work together as a team to write high-quality code and documentation. By the end of the project, we will have a better understanding of how printf works and how to create our own custom functions in C.</p>
+<h5>task 2</h5>
+<p>info generale abouy task 0:</p>
+<li>if specifier is %s -> output string</li>
+<li>if specifier is %c -> output character</li>
+<li>if specifier is %% -> output %</li>
+<h5>task 3</h5>
+<p>info generale abouy task 0:</p>
+<li>if specifier is %s -> output string</li>
+<li>if specifier is %c -> output character</li>
+<li>if specifier is %% -> output %</li>
+<h5>task 4</h5>
+<p>info generale abouy task 0:</p>
+<li>if specifier is %s -> output string</li>
+<li>if specifier is %c -> output character</li>
+<li>if specifier is %% -> output %</li>
+<h5>task 5</h5>
+<p>info generale abouy task 0:</p>
+<li>if specifier is %s -> output string</li>
+<li>if specifier is %c -> output character</li>
+<li>if specifier is %% -> output %</li>
+<h5>task 6</h5>
+<p>info generale abouy task 0:</p>
+<li>if specifier is %s -> output string</li>
+<li>if specifier is %c -> output character</li>
+<li>if specifier is %% -> output %</li>
+<p>problem in this project</p>
