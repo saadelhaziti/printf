@@ -12,11 +12,11 @@ int main(void)
     void *addr;
     int n = 0;
 
-    addr = (void *)0x7ffe637541f0;
+    addr = NULL;
     n = _printf("Address:[%p]\n", addr);
     printf("Address:[%p]\n", addr);
 
-    printf("%d",n);
+    printf("%d\n",n);
 
 	return (0);
 }
