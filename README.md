@@ -22,10 +22,12 @@ it first argument which contains text and format specifiers that are replaced by
 <li>if specifier is %b -> output binary</li>
 
 <h5>task 3</h5>
-<p>info generale abouy task 0:</p>
-<li>if specifier is %s -> output string</li>
-<li>if specifier is %c -> output character</li>
-<li>if specifier is %% -> output %</li>
+<p>general info about task 3:</p>
+<li>if specifier is %u -> output unsigned integer</li>
+<li>if specifier is %o -> output octal </li>
+<li>if specifier is %x -> output lower hexadecimal</li>
+<li>if specifier is %X -> output upper hexadecimal</li>
+
 <h5>task 4</h5>
 <p>info generale abouy task 0:</p>
 <li>if specifier is %s -> output string</li>

@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * rint_u - print unsigned int
+ * print_u - print unsigned int
  *
  * @num: the number input
  *
