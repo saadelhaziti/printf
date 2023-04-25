@@ -71,9 +71,19 @@ int print_address(void *ptr)
 {
 	uintptr_t address = (uintptr_t) ptr;
 	char hex_str[sizeof(uintptr_t) * 2 + 3];
-	int index = 0, start = 2, end, digit, i = 0, count = 0;
+	char *error = "(nil)";
+	int index = 0, start = 2, end, digit, i = 0, count = 0, j;
 	char temp;
 
+	if (ptr == NULL)
+	{
+		while (error[j] != '\0')
+		{
+			_putchar(error[j]);
+			j++;
+		}
+		return (-1);
+	}
 	hex_str[index] = '0';
 	index++;
 	hex_str[index] = 'x';
