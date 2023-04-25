@@ -6,7 +6,7 @@
  * @list: argument
  * @format: character for switch
  *
- * eturn: counter
+ * Return: counter
  */
 
 int switche(va_list list, char format)
