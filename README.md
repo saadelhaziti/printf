@@ -39,4 +39,3 @@ it first argument which contains text and format specifiers that are replaced by
 <h5>task 6</h5>
 <p>general info abouy task 6:</p>
 <li>if specifier is %p -> output address</li>
-<p>problem in this project</p>
