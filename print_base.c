@@ -171,5 +171,5 @@ int print_hex_upper(va_list arg)
 		_putchar(hex[j]);
 		j--;
 	}
-	return (i);
+	return i;
 }
