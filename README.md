@@ -37,8 +37,6 @@ it first argument which contains text and format specifiers that are replaced by
 <li>if specifier is %S -> output non printable characters</li>
 
 <h5>task 6</h5>
-<p>info generale abouy task 0:</p>
-<li>if specifier is %s -> output string</li>
-<li>if specifier is %c -> output character</li>
-<li>if specifier is %% -> output %</li>
+<p>general info abouy task 6:</p>
+<li>if specifier is %p -> output address</li>
 <p>problem in this project</p>
