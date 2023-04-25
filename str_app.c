@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * rearch - printf spechle char in hex
- * @n: Inpute
+ * search - printf special char in hex
+ * @n: Input
  *
  * Return: counter
  */
 
-int rearch(char n)
+int search(char n)
 {
 	if (n < ' ' || n >= '~')
 	{
@@ -20,7 +20,7 @@ int rearch(char n)
 }
 
 /**
- * print_str - printf spechle char in hex
+ * print_str - printf special char in hex
  * @arg: Argument
  *
  * Return: counter
@@ -31,9 +31,10 @@ int print_str(va_list arg)
 	char *str = va_arg(arg, char *);
 	int  i = 0;
 	int count = 0;
+
 	while (str[i] != '\0')
 	{
-		if (rearch(str[i]) != -1)
+		if (search(str[i]) != -1)
 		{
 			_putchar(str[i]);
 			count++;
