@@ -13,9 +13,9 @@ it first argument which contains text and format specifiers that are replaced by
 <li>if specifier is %% -> output %</li>
 
 <h5>task 1</h5>
-<p>info generale abouy task 0:</p>
-<li>if specifier is %d -> output string</li>
-<li>if specifier is %i -> output character</li>
+<p>general info about task 1:</p>
+<li>if specifier is %d -> output integer</li>
+<li>if specifier is %i -> output integer</li>
 
 <h5>task 2</h5>
 <p>info generale abouy task 0:</p>

@@ -15,6 +15,7 @@ int main(void)
     addr = NULL;
     n = _printf("Address:[%p]\n", addr);
     printf("Address:[%p]\n", addr);
+    printf("Address:[%p]\n", addr);
 
     printf("%d\n",n);
 
