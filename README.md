@@ -4,7 +4,7 @@
 
 <p>This project is an implementation of "printf" which is a function in the C programming language
 (and many other languages).
-In C programming language, "printf" is included in the \<stdio.h> library, it takes a format string as
+In C programming language, "printf" is included in the stdio.h library, it takes a format string as
 it first argument which contains text and format specifiers that are replaced by values that follow it. </p>
 <h5>task 0</h5>
 <p>info generale abouy task 0:</p>
